@@ -35,7 +35,7 @@ desktopNav.setAttribute("data-highlight", "");
 const cursorHighlight = document.querySelectorAll("[data-highlight]");
 const root = document.documentElement;
 let colorOne = "transparent";
-let colorTwo = "#cdfa46";
+let colorTwo = "#add8e6";
 let colorThree = "#000";
 let hexRegex = new RegExp("^#([a-fA-F0-9]){3}$|[a-fA-F0-9]{6}$");
 let check = true;
@@ -205,7 +205,7 @@ hamBtn.addEventListener("mousemove", function () {
     colorThree = "#fff";
   } else {
     colorOne = "transparent";
-    colorTwo = "#cdfa46";
+    colorTwo = "#add8e6";
     colorThree = "#000";
   }
   root.style.setProperty("--cursor-color-one", colorOne);
@@ -220,7 +220,7 @@ hamBtn.addEventListener("click", function () {
     colorThree = "#fff";
   } else {
     colorOne = "transparent";
-    colorTwo = "#cdfa46";
+    colorTwo = "#add8e6";
     colorThree = "#000";
   }
   root.style.setProperty("--cursor-color-one", colorOne);
@@ -229,14 +229,14 @@ hamBtn.addEventListener("click", function () {
 });
 
 hamBtn.addEventListener("mouseleave", function () {
-  root.style.setProperty("--cursor-color-one", "#cdfa46");
+  root.style.setProperty("--cursor-color-one", "#add8e6");
   root.style.setProperty("--cursor-color-two", "transparent");
-  root.style.setProperty("--cursor-color-three", "#cdfa46");
+  root.style.setProperty("--cursor-color-three", "#add8e6");
 });
 
 hamWrap.addEventListener("mousemove", function () {
   colorOne = "transparent";
-  colorTwo = "#cdfa46";
+  colorTwo = "#add8e6";
   colorThree = "#000";
   root.style.setProperty("--cursor-color-one", colorOne);
   root.style.setProperty("--cursor-color-two", colorTwo);
@@ -244,9 +244,9 @@ hamWrap.addEventListener("mousemove", function () {
 });
 
 hamWrap.addEventListener("mouseleave", function () {
-  root.style.setProperty("--cursor-color-one", "#cdfa46");
+  root.style.setProperty("--cursor-color-one", "#add8e6");
   root.style.setProperty("--cursor-color-two", "transparent");
-  root.style.setProperty("--cursor-color-three", "#cdfa46");
+  root.style.setProperty("--cursor-color-three", "#add8e6");
 });
 
 cursorHighlight.forEach(function (highlight) {
@@ -268,7 +268,7 @@ cursorHighlight.forEach(function (highlight) {
     ) {
       colorTwo = dataColorTwo;
     } else {
-      colorTwo = "#cdfa46";
+      colorTwo = "#add8e6";
     }
     if (
       highlight.hasAttribute("data-color-dot") &&
@@ -284,8 +284,8 @@ cursorHighlight.forEach(function (highlight) {
   });
 
   highlight.addEventListener("mouseleave", function () {
-    root.style.setProperty("--cursor-color-one", "#cdfa46");
+    root.style.setProperty("--cursor-color-one", "#add8e6");
     root.style.setProperty("--cursor-color-two", "transparent");
-    root.style.setProperty("--cursor-color-three", "#cdfa46");
+    root.style.setProperty("--cursor-color-three", "#add8e6");
   });
 });

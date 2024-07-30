@@ -53,9 +53,9 @@ input::-webkit-inner-spin-button {
 }
 
 :root {
-  --cursor-color-one: #46d6fa;
+  --cursor-color-one: #3fd2f7;
   --cursor-color-two: transparent;
-  --cursor-color-three: #0df7e4;
+  --cursor-color-three: #00ffea;
 }
 
 /* FONTS */
@@ -318,7 +318,7 @@ input::-webkit-inner-spin-button {
   width: fit-content;
   background-color: #0dbdf3;
   padding: 20px;
-  color: #000;
+  color: #000000;
   max-width: 300px;
   font-size: 11px;
   opacity: 0;
@@ -1279,7 +1279,7 @@ section#invite {
   transform: translateY(-50%);
   height: 120%;
   width: 90%;
-  background-color: #cdfa46;
+  background-color: #46fafa;
   transition: height 400ms cubic-bezier(0.705, 0.095, 0.21, 0.94),
     opacity 200ms ease;
   opacity: 0.5;
@@ -2156,7 +2156,7 @@ section.logging {
 }
 
 .entry:hover {
-  background-color: #d80032;
+  background-color: #00cad8;
 }
 
 .entry:hover .delete {
@@ -2249,11 +2249,11 @@ section.logging {
 }
 
 [data-inactive]::after {
-  background-color: #e52222;
+  background-color: #22b7e5;
 }
 
 [data-inactive] input {
-  background-color: #e5222280;
+  background-color: #22a7e580;
 }
 
 /* FOOTER */
